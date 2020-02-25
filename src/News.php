@@ -17,7 +17,14 @@ class News {
                 'description' => 'News post type',
                 'public' => true,
                 'show_ui' => true,
-                'show_in_menu' => true
+                'show_in_menu' => true,
+                'supports' => [
+                    'title',
+                    'editor',
+                    'author',
+                    'excerpt',
+                    'custom-fields'
+                ]
             ]
         );
 
@@ -34,10 +41,5 @@ class News {
         );
 
         flush_rewrite_rules();
-    }
-
-    public function apiKeyMetabox()
-    {
-        echo 'Holi';
     }
 }
