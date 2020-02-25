@@ -1,0 +1,19 @@
+{
+    "name": "jakob.renpening/wp-news-importer",
+    "authors": [
+        {
+            "name": "Jakob H. Renpening",
+            "email": "jakob.renpening@wizeline.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "monolog/monolog": "^2.0",
+        "nesbot/carbon": "^2.30"
+    },
+    "autoload": {
+        "psr-4": {
+            "WPNewsImporter\\": "src/"
+        }
+    }
+}
